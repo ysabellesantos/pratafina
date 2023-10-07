@@ -1,101 +1,229 @@
 /* arquivo da folha de estilos de todo o site */
 /* fim css estilo header */
-    body, ul {
+body,
+ul {
     margin: 0px;
     padding: 0px;
 }
+
 #menu a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: sans-serif;
     font-size: 15px;
 }
-#menu a:hover{
+
+#menu a:hover {
     background: rgba(250, 146, 86, 0.89);
     font-size: 15px;
 }
-#logo{
+
+#logo {
     font-size: 1.5rem;
-  }
+}
+
 #logo img {
     height: 100px;
 }
+
 #logo img:hover {
     box-shadow: 2px 2px 4px #ffa191;
     transition: 0.3s;
 }
-    #header {
-        box-sizing: border-box;
-        height: 120px;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #ffad7e;
-    }
-    #menu{
-        display: flex;
-        list-style:none;
-        gap: 0.5rem;
-    }
-    #btn-mobile {
-        display: none;
-    }
-    /* fim css estilo header */
-    /* inicio estilo carousel */
-    #caurouselExaempleInterval{
-  position: relative;
-  z-index: 10;
-  padding-top: 10;
-}
-    
-    /* fim estilo carousel */
-    /* inicio estilo banner home */
-    /* para aplicar estilos class > utilize o ponto [ . ] antes do objeto */
-    /* para aplicar estilos no ID > utilize a hastag [ # ] antes do objeto */
-    .section-banner-home {
-        width: 100%;
-        height: 500px;
-        margin-top: 10px;
-        padding: 50px;
-        background-color:rgba(255, 161, 107, 0.89);
-    }
-    .section-banner-home img {
-        max-height: 400px;
-        width: 70%;
-        display: block;
-        margin: auto;
-    }
-    .section-banner-home .texto-banner {
-        margin-top: 30px;
-        font-size: 22px;
-        
-    }
-    .section-banner-home .texto banner h1 {
-        font-size: 30px;
-        width: 60px;
-        font-weight: 500;
-        padding-bottom: 20px;
-        color: rgba(255, 136, 67, 0.596);
-    }
-    .section-banner-home .texto-banner p {
- font-size: 15px;
- margin-bottom: 20px;
- color: rgb(0, 0, 0);
-     }
-     .section-banner-home .texto-banner a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        background-color: #000000;
-        padding: 4px 14px;
-        font-size:  15px;
-             }
-             .section-banner-home .texto-banner a:hover{
-                color:  #ff7300d2;
-                text-shadow: 2x 2px 4px #000000bd;
-                font-size: 18px;
-                font-weight: bold;
-             }
 
-        /* fim estilo banner home */
-     
+#header {
+    box-sizing: border-box;
+    height: 120px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffad7e;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+/* fim css estilo header */
+/* inicio estilo carousel */
+#caurouselExaempleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 10;
+}
+
+/* fim estilo carousel */
+/* inicio estilo banner home */
+/* para aplicar estilos class > utilize o ponto [ . ] antes do objeto */
+/* para aplicar estilos no ID > utilize a hastag [ # ] antes do objeto */
+.section-banner-home {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    padding: 50px;
+    background-color: rgba(255, 161, 107, 0.89);
+}
+
+.section-banner-home img {
+    max-height: 400px;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+
+}
+
+.section-banner-home .texto banner h1 {
+    font-size: 30px;
+    /* width: 70px; /* width = largura */
+    font-weight: 500;
+    /* espessura do texto */
+    padding-bottom: 20px;
+    /* margem interna > embaixo */
+    color: rgba(255, 136, 67, 0.596);
+}
+
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+.section-banner-home .texto-banner a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #000000;
+    padding: 4px 14px;
+    font-size: 15px;
+}
+
+.section-banner-home .texto-banner a:hover {
+    color: #ff7300d2;
+    text-shadow: 2x 2px 4px #000000bd;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* fim estilo banner home */
+/* inicio estilo destaque */
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+
+.destaque figcaption {
+    font-size: 13px;
+    color: #ff8f4fea;
+    text-decoration: none;
+    text-align: center;
+}
+
+.destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffad7e;
+    margin: 30px 0px;
+}
+
+.destaque .col-6 img:hover {
+    box-shadow: 2px 2px 6px #000000;
+    transition: 0.3s;
+}
+
+/* fim estilo destaque */
+
+/* inicio estilo novidades */
+.novidades .text-body {
+    width: 80%;
+    margin: 70px auto;
+}
+
+.novidades h2 {
+    color: #ffad7e;
+    font-size: 26px;
+    width: 70%;
+}
+
+.novidades p {
+    color: rgb #ffac5f;
+
+}
+
+.novidades a {
+    color: #000000;
+    text-decoration: none;
+    text-decoration-color: rgb#ffac5f;
+    padding: 6px 12px;
+    background-color: rgb#ffa191;
+    font-weight: 400;
+}
+/* fim estilo galeria */
+/* inicio galeria */
+.galeria{
+    margin: 60px auto 20px;
+    /* quando tivermos 4 valores no margin = margin = top / right / botoon / left > Exemplo: margin: 60px 60px 60px 60px; */ 
+    /* Quando tivermos 3 valores = top / right and left / botton > exemplo : 60px auto 60px */
+    /* Quando tivermos dois valores sera igual = top / botton / right and left > Exemplo: margin 60px 30px */
+/* quando tivermos 1 valor, botton, right and serao indenticos >  Exemplo: margin:60px */
+/* essa regra se aplica tambem ao padding.*/
+    }
+.galeria .container {
+    margin: 11%;
+}
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+width: 30%;
+margin: 14px auto 50px;
+}
+.galeria .gallery img {
+    width: 80%;
+    height: 80%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    display: block;
+}
+.galeria .gallery img:hover {
+    -webkit-transform: scale(1.9);
+    transform: scale(1.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.89);
+}
+
+
+
+
+
+
+    /* fim estilo galeria */
