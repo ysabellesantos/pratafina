@@ -53,7 +53,7 @@ ul {
 
 /* fim css estilo header */
 /* inicio estilo carousel */
-#caurouselExaempleInterval {
+#caurouselExampleInterval {
     position: relative;
     z-index: 10;
     padding-top: 10;
@@ -182,32 +182,38 @@ ul {
     background-color: rgb#ffa191;
     font-weight: 400;
 }
+
 /* fim estilo galeria */
 /* inicio galeria */
-.galeria{
+.galeria {
     margin: 60px auto 20px;
-    /* quando tivermos 4 valores no margin = margin = top / right / botoon / left > Exemplo: margin: 60px 60px 60px 60px; */ 
+    /* quando tivermos 4 valores no margin = margin = top / right / botoon / left > Exemplo: margin: 60px 60px 60px 60px; */
     /* Quando tivermos 3 valores = top / right and left / botton > exemplo : 60px auto 60px */
     /* Quando tivermos dois valores sera igual = top / botton / right and left > Exemplo: margin 60px 30px */
-/* quando tivermos 1 valor, botton, right and serao indenticos >  Exemplo: margin:60px */
-/* essa regra se aplica tambem ao padding.*/
-    }
+    /* quando tivermos 1 valor, botton, right and serao indenticos >  Exemplo: margin:60px */
+    /* essa regra se aplica tambem ao padding.*/
+}
+
 .galeria .container {
     margin: 11%;
 }
+
 .galeria h2 {
     text-align: center;
     font-size: 24px;
 }
+
 .galeria p {
     text-align: center;
     width: 50%;
     margin: 14px auto 50px;
 }
+
 .galeria .gallery {
-width: 30%;
-margin: 14px auto 50px;
+    width: 30%;
+    margin: 14px auto 50px;
 }
+
 .galeria .gallery img {
     width: 80%;
     height: 80%;
@@ -215,6 +221,7 @@ margin: 14px auto 50px;
     transition: transform .5s ease;
     display: block;
 }
+
 .galeria .gallery img:hover {
     -webkit-transform: scale(1.9);
     transform: scale(1.9);
@@ -226,4 +233,227 @@ margin: 14px auto 50px;
 
 
 
-    /* fim estilo galeria */
+/* fim estilo galeria */
+
+/* Início Whatsapp */
+.whatsapp {
+    position: fixed;
+    top: 400px;
+    right: 0px;
+    z-index: 200;
+}
+
+.whatsapp img {
+    height: 70px;
+}
+
+/* Início efeito pulse */
+.whatsapp .pulse {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(110%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+
+    100% {
+        transform: scale(1.1);
+        filter: brightness(110%);
+    }
+}
+
+/* Fim efeito pulse */
+/* Fim Whatsapp */
+
+/* Início estilo Footer (rodape) */
+.rodape {
+    padding: 50px 50px 0;
+}
+
+.rodape .container #logo-rodape img {
+    height: 60%;
+    width: 60%;
+    padding-left: 10px;
+    transition: transform .6s;
+    display: block;
+}
+
+.rodape .container #logo-rodape img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.rodape .info-contato p {
+    margin: 0;
+}
+
+.rodape .linkFooter {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    margin-left: 0.7rem;
+}
+
+.rodape .linkFooter:hover {
+    font-weight: bold;
+}
+
+.rodape .redes-sociais {
+    display: inline-block;
+}
+
+.rodape .redes-sociais img {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    margin-left: 0.8rem;
+    transition: transform .3s;
+    border-radius: 15px;
+    /* border-radius = arredondando as extremidades da forma */
+}
+
+.rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Fim estilo Footer (rodape) */
+
+/* Início estilo Vídeos */
+.embed-container {
+    position: relative;
+    padding-bottom: 0;
+    height: auto;
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+}
+
+.embed-container p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.embed-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.embed-container iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    border-radius: 1em;
+    box-shadow: gray 0.5em 0.5em 0.3em;
+    transition: transform .3s;
+    display: flex;
+}
+
+.embed-container iframe:hover {
+    flex: 1;
+    z-index: 1;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+
+.embed-container .col-lg-4 {
+    margin-top: 30px;
+}
+
+.embed-container .col-lg-6 {
+    margin-top: 30px;
+}
+
+/* Fim estilo Vídeos */
+/* inicio estilo contato */
+.contact {
+    padding: 70px 0px;
+    background: #fad3b3;
+}
+
+.section-title h2 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    border-bottom: 5px solide #fab39b;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.section-title p {
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.contact input,
+.contact textarea {
+    background: #fafafa;
+}
+
+.contact textarea {
+    min-height: 188px;
+    max-width: 100%;
+}
+
+.contact .map {
+    overflow: hidden;
+    border-radius: 4px;
+
+}
+
+/* fim estilo contato */
+
+
+/* Início estilo Market Place */
+.market-place {
+  height: 180px;
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.market-place img {
+  height: 160px;
+  width: 100%;
+}
+/* Fim estilo Market Place */

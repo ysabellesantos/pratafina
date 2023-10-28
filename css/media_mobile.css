@@ -1,0 +1,70 @@
+/* Início Estilo Media >> Mobile */
+@media (max-width: 690px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 15em;
+    top: 120px;
+    right: 0px;
+    background: #ffad7e;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    padding-left: 5px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #menu li {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: hidden;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    /* Para aumentar ou diminuir a espessura da linha do hamburger */
+    width: 30px;
+    /* Para alterar a largura do hamburger */
+    color: #000000;
+    /*Para alterar a cor do hamburger */
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 30px;
+    /* Altera a largura do hamburger, juntamente com o width anterior */
+    height: 2px;
+    background: currentColor;
+    margin-top: 4px;
+    /* Altera o epaçamento, entre as linhas do hamburger */
+    position: relative;
+    border-top: 2px solid;
+    /* Para aumentar ou diminuir a espessura linha do hamburger, juntamente com o border-top anterior */
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -6px;
+  }
+}
+/* Fim Estilo Media >> Mobile */
